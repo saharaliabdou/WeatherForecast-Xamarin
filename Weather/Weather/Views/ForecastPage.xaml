@@ -5,6 +5,11 @@
     <ContentPage.Content>
         <StackLayout>
             <Label>Your code to present the weather data for example in a ListView</Label>
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate></DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
