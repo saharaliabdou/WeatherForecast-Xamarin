@@ -42,7 +42,8 @@ namespace Weather.Views
 
         private async Task LoadForecast()
         {
-            //Heare you load the forecast 
-        }
+            
+     
+}
     }
 }

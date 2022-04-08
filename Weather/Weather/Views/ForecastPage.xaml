@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label>Your code to present the weather data for example in a ListView</Label>
-            <ListView>
+            <ListView x:Name="WeatherListView">
                 <ListView.ItemTemplate>
                     <DataTemplate></DataTemplate>
                 </ListView.ItemTemplate>
