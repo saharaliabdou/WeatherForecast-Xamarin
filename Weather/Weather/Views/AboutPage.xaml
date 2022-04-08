@@ -5,8 +5,8 @@
              Title="About Weather">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Project Part B" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Frame BackgroundColor="Beige"  Padding="24" CornerRadius="0">
+            <Label Text="Project Part B" HorizontalTextAlignment="Center" TextColor="Black"  FontSize="36"/>
         </Frame>
         <Label Text="Weather in Xamarin.Forms" FontSize="Title" Padding="30,10,30,10"/>
         <Label Text="This part of the project is about making a simple UI in to the console weather service made in project part A using Flyout." 
@@ -16,7 +16,7 @@
             <Label.FormattedText>
                 <FormattedString>
                     <FormattedString.Spans>
-                        <Span Text="Created by Martin Lenart"/>
+                        <Span Text="Created by Sahar Ali Abdou"/>
                     </FormattedString.Spans>
                 </FormattedString>
             </Label.FormattedText>

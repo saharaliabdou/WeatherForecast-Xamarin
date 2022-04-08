@@ -37,18 +37,11 @@ namespace Weather.Views
                     new MainPageFlyoutMenuItem { Id = 1, Title = "Debug Console", TargetType=typeof(ConsolePage) },
                     new MainPageFlyoutMenuItem { Id = 2, Title = "Stockholm", TargetType=typeof(ForecastPage) },
                     new MainPageFlyoutMenuItem { Id = 3, Title = "Uppsala", TargetType=typeof(ForecastPage) },
-                    new MainPageFlyoutMenuItem { Id = 4, Title = "New york", TargetType=typeof(ForecastPage) },
-                    new MainPageFlyoutMenuItem { Id = 5, Title = "Los Angelos", TargetType=typeof(ForecastPage) },
-                    new MainPageFlyoutMenuItem { Id = 6, Title = "Los Angelos", TargetType=typeof(ForecastPage) },
-                    new MainPageFlyoutMenuItem { Id = 7, Title = "Bombay", TargetType=typeof(ForecastPage) },
-                    new MainPageFlyoutMenuItem { Id = 8, Title = "Bangok", TargetType=typeof(ForecastPage) },
-                    new MainPageFlyoutMenuItem { Id = 9, Title = "São Paulo", TargetType=typeof(ForecastPage) },
-                    new MainPageFlyoutMenuItem { Id = 10, Title = "Buenos Aires", TargetType=typeof(ForecastPage) },
-                     
-            });
+                    new MainPageFlyoutMenuItem { Id = 4, Title = "New York", TargetType=typeof(ForecastPage) },
+                    new MainPageFlyoutMenuItem { Id = 5, Title = "Bangkok", TargetType=typeof(ForecastPage) },
+                    new MainPageFlyoutMenuItem { Id = 6, Title = "Rio", TargetType=typeof(ForecastPage) },
+                });
 
-               
-               
             }
         }
     }
