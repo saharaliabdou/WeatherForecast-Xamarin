@@ -9,31 +9,47 @@
 
         <StackLayout BackgroundColor="Beige">
             <Label>Weather Forecast</Label>
+
+            <Button Text="Refresh" Clicked="Button_Clicked" />
             
+                
+           
 
             <ListView x:Name= "WeatherListView">
                 
                 <ListView.ItemTemplate>
+                   
                     <DataTemplate>
+                        
                         <ViewCell>
+
+                            
+
                             <StackLayout Orientation="Vertical"
                                 BackgroundColor="Bisque"
                                
                                 Padding="5"
                                 Margin="0,0,0,5">
+                             
+                                    <Label
+                 Text="{Binding DateTime, StringFormat='{0:dddd, dd MMMM yyyy}'}"
 
-                                <Label Text="{Binding DateTime, StringFormat='{0:dddd, dd MMMM yyyy}'}"></Label>
-
-                                <Label Text="{Binding DateTime, StringFormat='{0:h:mm tt}'}"
-                                      TextColor="Black"
+                                TextColor="Black"
                                       FontSize="Medium"
                                       VerticalOptions="Center"
-                                      Margin="20,0"/>
+                                      Margin="20,0"
+                />
+
+
+                                <Image x:Name="Items" Source= "{x:Binding Icon}"/>
+
+
+
+                                <Label Text="{Binding DateTime, StringFormat='{0:h:mm tt}'}"></Label>
                                 <Label Text="{Binding .}"/>
-                                 
+
+
                                 
-                                
-                               
 
 
 
