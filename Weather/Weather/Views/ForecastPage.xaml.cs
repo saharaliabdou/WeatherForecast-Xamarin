@@ -53,7 +53,7 @@ namespace Weather.Views
                     //t1.Result.Items.ForEach(x => x.Icon = $"http://openweathermap.org/img/wn/{x.Icon}@2x.png");
                     t1.Result.Items.ForEach(x => x.Icon = $"http://openweathermap.org/img/wn/{x.Icon}@2x.png");
                     WeatherListView.ItemsSource = t1.Result.Items;
-
+                
 
                 });
             });

@@ -7,13 +7,12 @@
 
     <ContentPage.Content>
 
-        <StackLayout BackgroundColor="Beige">
+        <StackLayout BackgroundColor="#4DCCBD">
             <Label>Weather Forecast</Label>
 
             <Button Text="Refresh" Clicked="Button_Clicked" />
             
-                
-           
+
 
             <ListView x:Name= "WeatherListView">
                 
@@ -26,12 +25,12 @@
                             
 
                             <StackLayout Orientation="Vertical"
-                                BackgroundColor="Bisque"
+                                BackgroundColor="#D6FFF6"
                                
                                 Padding="5"
                                 Margin="0,0,0,5">
-                             
-                                    <Label
+
+                                <Label
                  Text="{Binding DateTime, StringFormat='{0:dddd, dd MMMM yyyy}'}"
 
                                 TextColor="Black"
@@ -41,15 +40,24 @@
                 />
 
 
-                                <Image x:Name="Items" Source= "{x:Binding Icon}"/>
 
 
 
                                 <Label Text="{Binding DateTime, StringFormat='{0:h:mm tt}'}"></Label>
                                 <Label Text="{Binding .}"/>
 
+                                <StackLayout>
 
-                                
+                                    <Image x:Name="Items" Source="{Binding Icon} " 
+                                           
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="CenterAndExpand"></Image>
+                                </StackLayout>
+
+
+
+
+
 
 
 
@@ -57,6 +65,7 @@
 
 
                             </StackLayout>
+                            
 
                         </ViewCell>
                     </DataTemplate>

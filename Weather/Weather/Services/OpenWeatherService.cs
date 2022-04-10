@@ -82,6 +82,9 @@ namespace Weather.Services
             item.Temperature = wdListItem.main.temp;
             item.Description = wdListItem.weather.Count > 0 ? wdListItem.weather.First().description : "No info";
             item.WindSpeed = wdListItem.wind.speed;
+       
+            item.Icon = wdListItem.weather.Count > 0 ? wdListItem.weather.First().icon : "No info";
+
 
             return item;
         }
