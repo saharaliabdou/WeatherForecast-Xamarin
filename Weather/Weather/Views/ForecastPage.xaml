@@ -8,9 +8,10 @@
     <ContentPage.Content>
 
         <StackLayout BackgroundColor="#4DCCBD">
+            <Button Text="Refresh"
+                    Clicked="refresh"/>
             <Label>Weather Forecast</Label>
 
-            <Button Text="Refresh" Clicked="Button_Clicked" />
             
 
 
