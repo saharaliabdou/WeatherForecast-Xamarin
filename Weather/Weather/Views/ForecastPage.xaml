@@ -50,8 +50,8 @@
 
                                     <Image x:Name="Items" Source="{Binding Icon} " 
                                            
-                                           VerticalOptions="CenterAndExpand"
-                                           HorizontalOptions="CenterAndExpand"></Image>
+                                           VerticalOptions="Fill"
+                                           HorizontalOptions="Fill"></Image>
                                 </StackLayout>
 
 

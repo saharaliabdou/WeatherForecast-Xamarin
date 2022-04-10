@@ -20,6 +20,7 @@ namespace Weather.Views
         {
             InitializeComponent();
             myOutput.Text = "";
+            weatherGif.Source = $"https://media3.giphy.com/media/MBNaeXPprs8lBb4fjQ/200w_s.gif";
         }
         public void WriteLine()
         {

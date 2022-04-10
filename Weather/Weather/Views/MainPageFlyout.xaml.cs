@@ -40,6 +40,9 @@ namespace Weather.Views
                     new MainPageFlyoutMenuItem { Id = 4, Title = "New York", TargetType=typeof(ForecastPage) },
                     new MainPageFlyoutMenuItem { Id = 5, Title = "Bangkok", TargetType=typeof(ForecastPage) },
                     new MainPageFlyoutMenuItem { Id = 6, Title = "Rio", TargetType=typeof(ForecastPage) },
+                    new MainPageFlyoutMenuItem { Id = 7, Title = "Los Angeles", TargetType=typeof(ForecastPage) },
+                    new MainPageFlyoutMenuItem { Id = 8, Title = "Cairo", TargetType=typeof(ForecastPage) },
+                    new MainPageFlyoutMenuItem { Id = 9, Title = "Antibes", TargetType=typeof(ForecastPage) },
                 });
 
             }

@@ -13,6 +13,7 @@ namespace Weather.Views
         public AboutPage()
         {
             InitializeComponent();
+            sunnyGif.Source =  $"https://media0.giphy.com/media/vNg01outFUVhyKGiB2/giphy.gif";
         }
     }
 }
