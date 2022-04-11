@@ -44,38 +44,30 @@ namespace Weather.Views
         private async Task LoadForecast()
         {
             //Heare you load the forecast 
-            await Task.Run(() =>
+            Forecast t1 = await service.GetForecastAsync(Title);
+
             {
 
-                Task<Forecast> t1 = service.GetForecastAsync(Title);
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    //t1.Result.Items.ForEach(x => x.Icon = $"http://openweathermap.org/img/wn/{x.Icon}@2x.png");
-                    t1.Result.Items.ForEach(x => x.Icon = $"http://openweathermap.org/img/wn/{x.Icon}@2x.png");
-                    WeatherListView.ItemsSource = t1.Result.Items;
-                
+                t1.Items.ForEach(x => x.Icon = $"http://openweathermap.org/img/wn/{x.Icon}@2x.png");
 
-                });
-            });
+
+                WeatherListView.ItemsSource = t1.Items.GroupBy(x => x.DateTime.Date);
+
+
+            };
+
         }
         //private void Button_Clicked(object sender, EventArgs e)
         //{
         //    ((Button)sender).Text = "";
-            
+
         //}
         private async void refresh(object sender, EventArgs args)
         {
-            await Task.Run(() =>
-            {
-                Task<Forecast> t1 = service.GetForecastAsync(Title);
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    t1.Result.Items.ForEach(x => x.Icon = $"http://openweathermap.org/img/wn/{x.Icon}@2x.png");
-                    WeatherListView.ItemsSource = t1.Result.Items;
-                    
-
-                });
-            });
+            await LoadForecast();
+            
+               
+            
         }
     }
 }
