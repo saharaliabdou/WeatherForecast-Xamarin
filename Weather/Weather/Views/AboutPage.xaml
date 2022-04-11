@@ -5,11 +5,11 @@
              Title="About Weather">
     <AbsoluteLayout>
 
-        <Image AbsoluteLayout.LayoutBounds="0,0,800,700"   x:Name="sunnyGif" Source="sunnyGif" 
+        <Image AbsoluteLayout.LayoutBounds="0,0,800,650"   x:Name="sunnyGif" Source="sunnyGif" 
                   ></Image>
 
         <StackLayout>
-        <Frame BackgroundColor="#DABFDE"  Padding="24" CornerRadius="0">
+        <Frame BackgroundColor="#98B6D4"  Padding="24" CornerRadius="0">
             <Label Text="Project Part B" HorizontalTextAlignment="Center" TextColor="Black"  FontSize="36"/>
         </Frame>
        
