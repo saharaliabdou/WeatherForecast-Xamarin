@@ -3,9 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Weather.Views.AboutPage"
              Title="About Weather">
+    <AbsoluteLayout>
 
-    <StackLayout BackgroundColor="#DABFDE">
-        <Frame BackgroundColor="#C1BBDD"  Padding="24" CornerRadius="0">
+        <Image AbsoluteLayout.LayoutBounds="0,0,800,700"   x:Name="sunnyGif" Source="sunnyGif" 
+                  ></Image>
+
+        <StackLayout>
+        <Frame BackgroundColor="#DABFDE"  Padding="24" CornerRadius="0">
             <Label Text="Project Part B" HorizontalTextAlignment="Center" TextColor="Black"  FontSize="36"/>
         </Frame>
        
@@ -23,13 +27,13 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
+        
+       
 
-
-        <Image x:Name="sunnyGif" Source="sunnyGif" 
-                  VerticalOptions="End" HorizontalOptions="End"></Image>
-
+    
 
 
     </StackLayout>
+    </AbsoluteLayout>
 
 </ContentPage>
